@@ -1,6 +1,6 @@
 # APP测试流程
 
-说实话我的文笔有点差，构思了很久没想出像其他博主那样将文章写的那么引人入胜，不过还好写的是技术文章，只要能够把自己的观点说清楚也算是一篇能看的下去的文章。
+说实话我的文笔有点差，构思了很久没想出像其他博主那样将文章写的那么引人入胜，不过还好写的是技术文章，只要能够把自己的观点说清楚也算是一篇能看的下去的文章（ps: 自我安慰~）。
 
 不过在开始讲具体内容之前还是要唠叨一下，在移动互联网的历史里，2007 年乔帮主发布第一代 iPhone，从那以后，App 伴随 3G → 4G → 5G 的演进，已经走过了将近 20 年的发展历程。应用的形态层出不穷，从最初的通讯、工具，到如今的支付、出行、娱乐、AI 助手，几乎覆盖了我们生活的方方面面。
 
@@ -100,16 +100,34 @@
 
 * 测试总结报告：
 
-* 灰度发布
+* 灰度发布: 就是内测，用于规避上线的风险，缩小影响范围（让一部分用户继续用产品旧版本特性A，一部分用户开始用新版本特性B，如果用户对B没有什么反对意见，那么逐步扩大范围，把所有用户都迁移到B上面来）
 
-* 上线
+* 上线：
+    * Google Play Store 上线流程：
+        1. 准备开发者账号设置 Google Merchant Account (如果需要)
+        2. 在 Google Play Console 中创建应用和商店列表
+        3. 配置应用内容和分级
+        4. 上传和准备发布版本
+        5. 设置价格和分发
+        6. 提交审核
+        7. 发布上线
+        8. 后续维护和更新
+
+        [https://learn.microsoft.com/zh-tw/appcenter/distribution/stores/googleplay](https://learn.microsoft.com/zh-tw/appcenter/distribution/stores/googleplay)
+
+    * App Store上线流程：
+
+        [https://learn.microsoft.com/zh-tw/appcenter/distribution/stores/apple](https://learn.microsoft.com/zh-tw/appcenter/distribution/stores/apple)
 
 
-## APP测试用例设计
+    
+
 
 
 ## 常见缺陷
+* 功能缺陷：
 
+* 
 
 ## bug处理流程
 ![alt text](./images/bug处理流程.png)
