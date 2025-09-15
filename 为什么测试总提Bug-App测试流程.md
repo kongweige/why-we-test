@@ -150,5 +150,6 @@
 ![alt text](./images/RAG.png)
 
 > https://github.com/langchain-ai/rag-from-scratch
+> 
 > RAG这块看的极客时间的李超（抱歉github忘了）
 
