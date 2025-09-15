@@ -1,4 +1,4 @@
-<img width="4425" height="3816" alt="4bd85d726fb8d138b07679bd3659f611" src="https://github.com/user-attachments/assets/c9d61f75-26ed-42ce-9ae4-3c1158072f7d" /># APP测试流程
+# APP测试流程
 
 说实话我的文笔有点差，构思了很久没想出像其他博主那样将文章写的那么引人入胜，不过还好写的是技术文章，只要能够把自己的观点说清楚也算是一篇能看的下去的文章。
 
