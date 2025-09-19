@@ -31,6 +31,9 @@ Android：Uiautomator2
 
 ### 2.2 Appium关键用法
 
+* Appium原理
+Appium是通过cs架构
+
 讲一下脚本执行和调用的原理，之后直接说capability配置、控件定位方式、等待方式、元素定位方法、
 
 ## 3. 基于PO模式的实际测试场景
