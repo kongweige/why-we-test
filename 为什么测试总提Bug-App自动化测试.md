@@ -25,7 +25,7 @@
 
 ### 2.2 Appium关键用法
 
-* Appium原理
+#### 2.2.1 Appium原理
 <img width="811" height="620" alt="image" src="https://github.com/user-attachments/assets/f4b3df1b-feb9-420b-a0ee-547eed9f7dce" />
 
 * Client 端：将与 Appium 的各种交互封装为可被调用的 API 或工具，如此一来使用者就可以通过 Inspector 或者 Java/Python/其他语言的 Appium 第三库对 Appium Server 进行调用;
@@ -41,6 +41,16 @@
   * 手机端上已经由BootStrap.jar(iOS为BootStrip.js)开启的socket服务器监听相应的端口，BootStrap.jar在appium每个session第一次访问手机端的时候会自动安装；
 
   * 手机端接收到对应的请求后，通过BootStrap.jar翻译成UIAutomator能执行的命令，然后通过UIAutomator处理并操作APP完成测试；
+  
+#### 2.2.2 capability配置
+理解了Appium的工作原理后
+
+#### 2.2.3 控件定位方式
+
+#### 2.2.4 等待方式
+
+#### 2.2.5 元素定位方法
+
 
 讲一下脚本执行和调用的原理，之后直接说capability配置、控件定位方式、等待方式、元素定位方法、
 
@@ -57,6 +67,7 @@
 
 
 ## App端代码Mock和Hook
+
 
 
 
