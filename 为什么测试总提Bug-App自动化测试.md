@@ -26,7 +26,8 @@
 ### 2.2 Appium关键用法
 
 * Appium原理
-<img width="831" height="628" alt="image" src="https://github.com/user-attachments/assets/eeb32d3a-b5cb-4566-b4d5-f73fe0ac3a95" />
+<img width="811" height="620" alt="image" src="https://github.com/user-attachments/assets/f4b3df1b-feb9-420b-a0ee-547eed9f7dce" />
+
 
 Appium是通过cs架构
 
@@ -45,6 +46,7 @@ Appium是通过cs架构
 
 
 ## App端代码Mock和Hook
+
 
 
 
