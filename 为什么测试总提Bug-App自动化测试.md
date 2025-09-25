@@ -29,7 +29,13 @@
 <img width="811" height="620" alt="image" src="https://github.com/user-attachments/assets/f4b3df1b-feb9-420b-a0ee-547eed9f7dce" />
 
 
-Appium是通过cs架构
+* 客户端运行脚本的时候，调用任何的appiumAPI，都会向Appium Server端post一条HTTP请求，请求内容就是根据webdriver wire protocol协议规定的一条JSON格式的数据；
+
+* 当开启appium服务器的同时就开启了监听端口，Appium Server端接收到请求后，解析出JSON数据并发送到手机端；
+
+* 手机端上已经由BootStrap.jar(iOS为BootStrip.js)开启的socket服务器监听相应的端口，BootStrap.jar在appium每个session第一次访问手机端的时候会自动安装；
+
+* 手机端接收到对应的请求后，通过BootStrap.jar翻译成UIAutomator能执行的命令，然后通过UIAutomator处理并操作APP完成测试；
 
 讲一下脚本执行和调用的原理，之后直接说capability配置、控件定位方式、等待方式、元素定位方法、
 
@@ -46,6 +52,7 @@ Appium是通过cs架构
 
 
 ## App端代码Mock和Hook
+
 
 
 
