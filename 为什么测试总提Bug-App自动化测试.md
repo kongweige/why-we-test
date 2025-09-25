@@ -28,14 +28,19 @@
 * Appium原理
 <img width="811" height="620" alt="image" src="https://github.com/user-attachments/assets/f4b3df1b-feb9-420b-a0ee-547eed9f7dce" />
 
+* Client 端：将与 Appium 的各种交互封装为可被调用的 API 或工具，如此一来使用者就可以通过 Inspector 或者 Java/Python/其他语言的 Appium 第三库对 Appium Server 进行调用;
+* Server 端：起到了信息中转的作用。启动了一个 HTTP 服务，如此就可以接收Client 客户端的请求信息。除此之外，会将所有的控制命令，比如：Adb 命令，自动化的控制命令等其他命令转发到被测应用的移动端上面;
+* 移动端：真正执行自动化测试的地方;
 
-* 客户端运行脚本的时候，调用任何的appiumAPI，都会向Appium Server端post一条HTTP请求，请求内容就是根据webdriver wire protocol协议规定的一条JSON格式的数据；
+* 运行原理如下：
 
-* 当开启appium服务器的同时就开启了监听端口，Appium Server端接收到请求后，解析出JSON数据并发送到手机端；
+  * 客户端运行脚本的时候，调用任何的appiumAPI，都会向Appium Server端post一条HTTP请求，请求内容就是根据webdriver wire protocol协议规定的一条JSON格式的数据；
 
-* 手机端上已经由BootStrap.jar(iOS为BootStrip.js)开启的socket服务器监听相应的端口，BootStrap.jar在appium每个session第一次访问手机端的时候会自动安装；
+  * 当开启appium服务器的同时就开启了监听端口，Appium Server端接收到请求后，解析出JSON数据并发送到手机端；
 
-* 手机端接收到对应的请求后，通过BootStrap.jar翻译成UIAutomator能执行的命令，然后通过UIAutomator处理并操作APP完成测试；
+  * 手机端上已经由BootStrap.jar(iOS为BootStrip.js)开启的socket服务器监听相应的端口，BootStrap.jar在appium每个session第一次访问手机端的时候会自动安装；
+
+  * 手机端接收到对应的请求后，通过BootStrap.jar翻译成UIAutomator能执行的命令，然后通过UIAutomator处理并操作APP完成测试；
 
 讲一下脚本执行和调用的原理，之后直接说capability配置、控件定位方式、等待方式、元素定位方法、
 
@@ -52,6 +57,7 @@
 
 
 ## App端代码Mock和Hook
+
 
 
 
