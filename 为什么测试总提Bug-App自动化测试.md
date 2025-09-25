@@ -26,7 +26,7 @@
 ### 2.2 Appium关键用法
 
 #### 2.2.1 Appium原理
-<img width="811" height="920" alt="image" src="https://github.com/user-attachments/assets/f4b3df1b-feb9-420b-a0ee-547eed9f7dce" />
+  <img width="811" height="920" alt="image" src="https://github.com/user-attachments/assets/f4b3df1b-feb9-420b-a0ee-547eed9f7dce" />
 
 * Client 端：将与 Appium 的各种交互封装为可被调用的 API 或工具，如此一来使用者就可以通过 Inspector 或者 Java/Python/其他语言的 Appium 第三库对 Appium Server 进行调用;
 * Server 端：起到了信息中转的作用。启动了一个 HTTP 服务，如此就可以接收Client 客户端的请求信息。除此之外，会将所有的控制命令，比如：Adb 命令，自动化的控制命令等其他命令转发到被测应用的移动端上面;
@@ -72,6 +72,7 @@
 
 
 ## App端代码Mock和Hook
+
 
 
 
